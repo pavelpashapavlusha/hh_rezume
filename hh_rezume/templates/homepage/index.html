@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Резюме Мышкин · Главная</title>
+{% endblock %}
+
+{% block main %}
+    <main>
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Начало</h1>
+          <p class="lead fw-normal">Всех приветствую на своем сайте - резюме. Меня зовут Павел, я начинающий разработчик Python, с огромным желанием учиться и развиваться в этой сфере. Здесь я расскажу Вам о себе, своем опыте работы и не только. И так, приступим</p>
+          <a class="btn btn-outline-secondary" href="{% url 'about_app:about' %}">Кто я?</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Обо мне</h2>
+            <p class="lead">Краткая биография, увлечения</p>
+            <a class="btn btn-outline-secondary" href="{% url 'about_app:about' %}">Подробнее</a>
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Образование</h2>
+            <p class="lead">Какие учебные заведения закончил, дополнительные курсы</p>
+            <a class="btn btn-outline-secondary" href="{% url 'education_app:education' %}">Подробнее</a>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Опыт работы</h2>
+            <p class="lead">В какой компании, на какой должности и сколько по времени?</p>
+            <a class="btn btn-outline-secondary" href="{% url 'work_app:work' %}">Подробнее</a>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Сертификат обучения</h2>
+            <p class="lead">Здесь я просто буду размещать сертификаты об окончании курсов</p>
+            <a class="btn btn-outline-secondary" href="{% url 'sertificate_app:sertificate' %}">Подробнее</a>
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+      </div>
+
+    </main>
+{% endblock %}

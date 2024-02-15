@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link href="{% static 'css/product.css' %}" rel="stylesheet">
+    <link type="image/x-icon" href="{% static 'img/foto.jpg' %}" rel="shortcut icon">
+    {% block title %}Контента пока нет :({% endblock %} 
+  </head>
+  <body>
+    {% include "includes/header.html" %}
+    
+    {% block main %}Контента пока нет :({% endblock %}
+    
+    {% include "includes/footer.html" %}
+
+  </body>
+</html>
